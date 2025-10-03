@@ -1,0 +1,10 @@
+# Tell GitHub Linguist to ignore Flutter's platform boilerplate
+/android/* linguist-vendored
+/ios/* linguist-vendored
+/macos/* linguist-vendored
+/windows/* linguist-vendored
+/linux/* linguist-vendored
+/web/* linguist-vendored
+
+# Keep Dart recognized
+*.dart linguist-detectable=true
