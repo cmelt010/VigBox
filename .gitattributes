@@ -1,10 +1,14 @@
-# Tell GitHub Linguist to ignore Flutter's platform boilerplate
-/android/* linguist-vendored
-/ios/* linguist-vendored
-/macos/* linguist-vendored
-/windows/* linguist-vendored
-/linux/* linguist-vendored
-/web/* linguist-vendored
+# Mark Flutter platform scaffolding as "vendored" (exclude from language stats)
+android/** linguist-vendored
+ios/** linguist-vendored
+macos/** linguist-vendored
+linux/** linguist-vendored
+windows/** linguist-vendored
+web/** linguist-vendored
 
-# Keep Dart recognized
+# Exclude build artifacts and deployment folder from stats
+build/** linguist-vendored
+docs/** linguist-vendored
+
+# Ensure Dart files remain detectable
 *.dart linguist-detectable=true
